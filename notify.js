@@ -22,7 +22,7 @@ app.post('/notify', (req, res) => {
         from: 'lukes-swings@hotmail.com',
         to: 'ballingalllj24@greyhigh.school.nz',
         subject: 'swing_rented',
-        text: `Name: ${name}\nDate and Time: ${datetime}`
+        text: `swing booked by Name: ${name}\nDate and Time: ${datetime}`
     };
 
     transporter.sendMail(mailOptions, (error, info) => {
