@@ -1,40 +1,9 @@
-document.getElementById("notifyForm").addEventListener("submit", function(event) {
-    event.preventDefault();
-    const name = document.getElementById("name").value;
-    const datetime = document.getElementById("datetime").value;
-
-    // Basic validation
-    if (!name || !datetime) {
-        alert("Please fill in all fields.");
-        return;
-    }
-
-    // Send data to server
-    fetch("/notify", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify({ name, datetime })
-    })
-    .then(response => {
-        if (response.ok) {
-            alert("Notification sent!");
-        } else {
-            alert("Failed to send notification.");
-        }
-    })
-    .catch(error => {
-        console.error("Error:", error);
-        alert("An error occurred. Please try again later.");
-    });
-
 const express = require('express');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 
-const app = express();
-const PORT = process.env.PORT || 3000;
+const app = express(smtp-mail.outlook.com);
+const PORT = process.env.PORT || 995;
 
 app.use(bodyParser.json());
 
