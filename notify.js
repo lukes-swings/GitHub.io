@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 
 const app = express(smtp-mail.outlook.com);
-const PORT = process.env.PORT || 995;
+const PORT = smtp-mail.outlook.com || 995;
 
 app.use(bodyParser.json());
 
