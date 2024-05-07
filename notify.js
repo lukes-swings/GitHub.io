@@ -2,14 +2,14 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 
-const app = express(smtp-mail.outlook.com);
+const app = express(smtp.office365.com);
 const PORT = smtp.office365.com || 587;
 
 app.use(bodyParser.json());
 
 // Replace these with your email credentials
 const transporter = nodemailer.createTransport({
-    service: 'smtp.office365.com',
+    service: 'outlook.live.com',
     auth: {
         user: 'lukes-swings@hotmail.com',
         pass: 'Lukessw1ngs'
